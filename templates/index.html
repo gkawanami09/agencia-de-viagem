@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    
+    <header>
+        <img src="/static/imgs/logo.png" alt="Logo">
+
+        <div class="link">
+            <nav class="linha1">
+              <a href="index.html">Página Principal</a>
+              <a href="promocoes.html">Promoções</a>
+              <a href="experiencias.html">Experiências</a>
+              <a href="roteiro.html">Roteiro</a>
+              <a href="aCultural.html">Ambiente cultural</a>
+            </nav>
+            <nav class="linha2">
+             <a href="sobre.html">Sobre a Brava</a>
+             <a href="contato.html">Contato</a>
+              <a href="depoimentos.html">Depoimento</a>
+             <a href="blog.html">Blog</a>
+            </nav>
+        </div>
+
+        <div class="moeda">
+            <p>15/05/2025</p>
+            <p>Euro: R$ 6,59</p>
+            <p>Dolár: R$ 5,84</p>
+        </div>
+    </header>
 </body>
 </html>
