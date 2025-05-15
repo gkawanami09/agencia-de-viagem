@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pacote - Serra do Cipó Light</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='imgs/logo.png') }}" alt="Logo">
+        <div class="link">
+            <nav class="linha1">
+                <div class="n1"><a href="/">Página Principal</a></div> |
+                <div class="n2"><a href="promocoes.html">Promoções</a></div> |
+                <div class="n3"><a href="#">Experiências</a></div> |
+                <div class="n4"><a href="roteiro.html">Roteiros</a></div> |
+                <div class="n5"><a href="#">Encontre seu roteiro</a></div>
+            </nav>
+            <nav class="linha2">
+                <div class="n6"><a href="#">Ambiental Cultural</a></div> |
+                <div class="n7"><a href="#">Sobre a Ambiental</a></div> |
+                <div class="n8"><a href="#">Contato</a></div> |
+                <div class="n9"><a href="/depoimentos">Depoimentos</a></div> |
+                <div class="n10"><a href="/blog">Blog</a></div>
+            </nav>
+        </div>
+
+        <div class="moeda">
+            <p>15/05/2025</p>
+            <p>Euro: R$ 6,59</p>
+            <p>Dólar: R$ 5,84</p>
+        </div>
+    </header>
+
+    <main class="serra-cipo">
+        <div class="cipo">
+
+                <h2>Pacote de Aventura: Serra do Cipó Light</h2>
+                <img src="https://i0.wp.com/pisa.tur.br/blog/wp-content/uploads/2019/07/serra-do-cip%C3%B3-capablog.jpg?fit=1920%2C840&ssl=1" alt="Imagem do pacote" class="img-card">
+                <p class="dias">🌙 Duração: 5 dias / 4 noites</p>
+                <p class="preco-label">Valor por pessoa:</p>
+                <p class="preco">R$ 3.235,00</p>
+                <h3>Descrição do Pacote</h3>
+                <p>
+                    Uma aventura leve e inesquecível na Serra do Cipó, ideal para quem deseja contato com a natureza sem abrir mão do conforto. O pacote inclui trilhas acessíveis, banho de cachoeira, visita a vilarejos típicos e gastronomia regional.
+                </p>
+                <h3>O que está incluso:</h3>
+                <ul>
+                    <li>Transporte ida e volta saindo de Belo Horizonte</li>
+                    <li>Hospedagem em pousada aconchegante com café da manhã</li>
+                    <li>Guia local especializado em ecoturismo</li>
+                    <li>2 trilhas guiadas com banho de cachoeira</li>
+                    <li>Seguro viagem</li>
+                </ul>
+                <h3>Informações adicionais:</h3>
+                <p>
+                    Recomendado para todas as idades. As trilhas são de nível leve e possuem apoio de guias em todo o percurso. <span>Leve roupa de banho, tênis confortável e repelente.</span>
+                </p>
+                <a href="https://zap-Brava" class="botao" style="margin-top: 20px;">Quero reservar esse pacote</a>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="{{ url_for('static', filename='imgs/logo.png') }}" alt="Logo Ambiental">
+            </div>
+
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/depoimentos">Depoimentos</a>
+                <a href="/blog">Blog</a>
+                <a href="roteiro.html">Roteiros</a>
+                <a href="contato.html">Contato</a>
+            </div>
+
+            <div class="footer-social">
+                <p>Siga a gente:</p>
+                <a href="#">Instagram</a> |
+                <a href="#">Facebook</a> |
+                <a href="#">YouTube</a>
+            </div>
+
+            <div class="footer-copy">
+                <p>&copy; 2025 Brava Turismo. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

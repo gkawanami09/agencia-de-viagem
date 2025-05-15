@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog de Aventura</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='imgs/logo.png') }}" alt="Logo">
+        <div class="link">
+            <nav class="linha1">
+                <div class="n1"><a href="/">Página Principal</a></div> |
+                <div class="n2"><a href="promocoes.html">Promoções</a></div> |
+                <div class="n3"><a href="#">Experiências</a></div> |
+                <div class="n4"><a href="roteiro.html">Roteiros</a></div> |
+                <div class="n5"><a href="#">Encontre seu roteiro</a></div>
+            </nav>
+            <nav class="linha2">
+                <div class="n6"><a href="#">Ambiental Cultural</a></div> |
+                <div class="n7"><a href="#">Sobre a Ambiental</a></div> |
+                <div class="n8"><a href="#">Contato</a></div> |
+                <div class="n9"><a href="/depoimentos">Depoimentos</a></div> |
+                <div class="n10"><a href="/blog">Blog</a></div>
+            </nav>
+        </div>
+
+        <div class="moeda">
+            <p>15/05/2025</p>
+            <p>Euro: R$ 6,59</p>
+            <p>Dólar: R$ 5,84</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="pagina-secundaria">
+            <h2>Blog de Aventura</h2>
+            <p>Dicas, roteiros e curiosidades para você viajar com mais segurança, diversão e consciência.</p>
+
+            <div class="postagem">
+                <h3>5 trilhas incríveis no Brasil para iniciantes</h3>
+                <p>
+                    Se você está começando no mundo das trilhas e quer conhecer lugares incríveis no Brasil, essa lista é perfeita para você. O Brasil é um país riquíssimo em natureza e oferece trilhas de diversos níveis, inclusive para quem nunca teve essa experiência antes. 
+                    Uma das mais acessíveis é a Trilha do Morro da Urca, no Rio de Janeiro. Com cerca de 40 minutos de caminhada leve, ela oferece uma vista espetacular da cidade maravilhosa. Em São Paulo, a Trilha das 7 Quedas, no PETAR, mistura cachoeiras com floresta e é ideal para um passeio em grupo.
+                    Outra opção muito popular é a Trilha da Pedra Bonita, também no Rio, com acesso fácil e um dos melhores mirantes da cidade. No Sul do país, o Parque Estadual de Vila Velha, no Paraná, oferece trilhas entre formações rochosas curiosas e trilhas curtas, com paisagem única.
+                    Para quem está em Minas Gerais, o Parque Nacional da Serra do Cipó oferece trilhas com quedas d’água, cânions e vegetação exuberante. São lugares seguros, sinalizados e que podem ser aproveitados por toda a família. Comece devagar, use roupas leves, tênis apropriado e leve sempre água. Pronto! Agora é só se aventurar.
+                </p>
+            </div>
+
+            <div class="postagem">
+                <h3>O que levar em uma viagem de ecoturismo</h3>
+                <p>
+                    Fazer ecoturismo é uma forma maravilhosa de se conectar com a natureza, mas é importante estar preparado para aproveitar ao máximo a experiência. Diferente de uma viagem urbana, o ecoturismo exige itens específicos para conforto, segurança e sustentabilidade.
+                    Comece com roupas leves, de secagem rápida, e calçados adequados para trilhas, como botas impermeáveis ou tênis com boa aderência. Sempre leve uma capa de chuva, protetor solar, boné ou chapéu e repelente.
+                    Na mochila, coloque também um lanche leve, frutas secas, barras de cereal e bastante água. Leve uma garrafa reutilizável — afinal, o cuidado com o meio ambiente começa com atitudes simples. Uma lanterna, kit de primeiros socorros e um saco para lixo também são essenciais.
+                    Para registrar o momento, leve uma câmera ou celular com boa bateria, mas evite som alto ou atividades que interfiram na fauna local. Por fim, nunca se esqueça de respeitar as regras das trilhas e parques, não retirar plantas ou pedras e não alimentar os animais. Ecoturismo é mais do que passeio: é respeito e equilíbrio com a natureza.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="{{ url_for('static', filename='imgs/logo.png') }}" alt="Logo Ambiental">
+        </div>
+
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/depoimentos">Depoimentos</a>
+            <a href="/blog">Blog</a>
+            <a href="roteiro.html">Roteiros</a>
+            <a href="contato.html">Contato</a>
+        </div>
+
+        <div class="footer-social">
+            <p>Siga a gente:</p>
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">YouTube</a>
+        </div>
+
+        <div class="footer-copy">
+            <p>&copy; 2025 Brava Turismo. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

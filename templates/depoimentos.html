@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Depoimentos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='imgs/logo.png') }}" alt="Logo">
+        <div class="link">
+            <nav class="linha1">
+                <div class="n1"><a href="/">Página Principal</a></div> |
+                <div class="n2"><a href="promocoes.html">Promoções</a></div> |
+                <div class="n3"><a href="#">Experiências</a></div> |
+                <div class="n4"><a href="roteiro.html">Roteiros</a></div> |
+                <div class="n5"><a href="#">Encontre seu roteiro</a></div>
+            </nav>
+            <nav class="linha2">
+                <div class="n6"><a href="#">Ambiental Cultural</a></div> |
+                <div class="n7"><a href="#">Sobre a Ambiental</a></div> |
+                <div class="n8"><a href="#">Contato</a></div> |
+                <div class="n9"><a href="/depoimentos">Depoimentos</a></div> |
+                <div class="n10"><a href="/blog">Blog</a></div>
+            </nav>
+        </div>
+
+        <div class="moeda">
+            <p>15/05/2025</p>
+            <p>Euro: R$ 6,59</p>
+            <p>Dólar: R$ 5,84</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="pagina-secundaria">
+            <h2>Depoimentos de Viajantes</h2>
+            <p>Confira as experiências incríveis de quem já viajou com a Ambiental Turismo.</p>
+
+            <div class="depoimento-box">
+                <blockquote>"Foi uma experiência inesquecível! A organização e o cuidado com o meio ambiente são impressionantes."</blockquote>
+                <cite>— Marina, RJ</cite>
+            </div>
+
+            <div class="depoimento-box">
+                <blockquote>"A viagem superou todas as minhas expectativas. Recomendo demais!"</blockquote>
+                <cite>— João, SP</cite>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="{{ url_for('static', filename='imgs/logo.png') }}" alt="Logo Ambiental">
+        </div>
+
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/depoimentos">Depoimentos</a>
+            <a href="/blog">Blog</a>
+            <a href="roteiro.html">Roteiros</a>
+            <a href="contato.html">Contato</a>
+        </div>
+
+        <div class="footer-social">
+            <p>Siga a gente:</p>
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">YouTube</a>
+        </div>
+
+        <div class="footer-copy">
+            <p>&copy; 2025 Brava Turismo. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
