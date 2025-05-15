@@ -15,7 +15,7 @@ def home():
 
 @app.route('/serra-do-cipo')
 def serra_do_cipo():
-    return render_template('/serra-do-cipo.html')
+    return render_template('serra-do-cipo.html')
 
 @app.route('/depoimentos')
 def depoimentos():
