@@ -141,6 +141,20 @@
                 <a href="/blog" class="botao-blog">Acessar Blog</a>
             </div>
         </section>
+
+        <section class="desconto-section">
+            <h2>Ganhe 10% de Desconto</h2>
+            <p>Digite seu e-mail abaixo para receber um cupom exclusivo:</p>
+
+            <form class="desconto-form" method="POST">
+                <input type="email" name="email" placeholder="seuemail@gmail.com" required>
+                <button type="submit">Quero meu desconto</button>
+            </form>
+
+            {% if desconto %}
+                <p class="mensagem-desconto">🎉 {{ desconto }}</p>
+            {% endif %}
+        </section>
     </main>
     <footer>
     <div class="footer-container">

@@ -399,3 +399,66 @@ footer {
     font-size: 0.85em;
     color: #ccc;
 }
+
+
+
+.desconto-section {
+    margin: 80px auto;
+    text-align: center;
+    padding: 40px;
+    background-color: #e0f7e9;
+    border-top: 4px solid #00923f;
+    border-bottom: 4px solid #00923f;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.desconto-section h2 {
+    color: #006b12;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.desconto-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.desconto-form input {
+    padding: 10px;
+    font-size: 1em;
+    width: 300px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.desconto-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #00923f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.desconto-form button:hover {
+    background-color: #007c33;
+}
+
+.mensagem-escondida {
+    display: none;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #006b12;
+    font-size: 1.1em;
+}
+.mensagem-desconto {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #006b12;
+    font-size: 1.1em;
+}
