@@ -3,34 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Principal</title>
+    <title>Página Principal</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <header>
-        <img src="/static/imgs/logo.png" alt="Logo">
+        <img src="{{ url_for('static', filename='imgs/logo.png') }}" alt="Logo">
 
         <div class="link">
             <nav class="linha1">
-              <a href="index.html">Página Principal</a>
-              <a href="promocoes.html">Promoções</a>
-              <a href="experiencias.html">Experiências</a>
-              <a href="roteiro.html">Roteiro</a>
-              <a href="aCultural.html">Ambiente cultural</a>
+                <div class="n1"><a href="/">Página Principal</a></div> |
+                <div class="n2"><a href="promocoes.html">Promoções</a></div> |
+                <div class="n3"><a href="#">Experiências</a></div> |
+                <div class="n4"><a href="roteiro.html">Roteiros</a></div> |
+                <div class="n5"><a href="#">Encontre seu roteiro</a></div>
             </nav>
             <nav class="linha2">
-             <a href="sobre.html">Sobre a Brava</a>
-             <a href="contato.html">Contato</a>
-              <a href="depoimentos.html">Depoimento</a>
-             <a href="blog.html">Blog</a>
+                <div class="n6"><a href="#">Ambiental Cultural</a></div> |
+                <div class="n7"><a href="#">Sobre a Ambiental</a></div> |
+                <div class="n8"><a href="#">Contato</a></div> |
+                <div class="n9"><a href="/depoimentos">Depoimentos</a></div> |
+                <div class="n10"><a href="/blog">Blog</a></div>
             </nav>
         </div>
 
         <div class="moeda">
             <p>15/05/2025</p>
             <p>Euro: R$ 6,59</p>
-            <p>Dolár: R$ 5,84</p>
+            <p>Dólar: R$ 5,84</p>
         </div>
     </header>
+    <main>
+        <section class="banner">
+            <img src="{{ url_for('static', filename='imgs/banner.png') }}" alt="banner">
+        </section>
+        <section>
+            <h2>O que você procura?</h2>
+            <div class="grade-roteiros">
+                <div class="card" style="top: 0; left: 0;">
+                    <div class="icone">🏖️</div>
+                <h3>Feriados</h3>
+                </div>
+                <div class="card" style="top: 0; left: 280px;">
+                    <div class="icone">👨‍👩‍👧‍👦</div>
+                    <h3>Roteiros para Família</h3>
+                </div>
+                <div class="card" style="top: 0; left: 560px;">
+                    <div class="icone">⛰️</div>
+                    <h3>Roteiros de Aventura</h3>
+                </div>
+                <div class="card" style="top: 220px; left: 0;">
+                    <div class="icone">💲</div>
+                    <h3>Roteiros em promoção</h3>
+                </div>
+                <div class="card" style="top: 220px; left: 280px;">
+                    <div class="icone">🌳</div>
+                    <h3>Roteiros para relaxar</h3>
+                </div>
+                <div class="card" style="top: 220px; left: 560px;">
+                    <div class="icone">🎆</div>
+                    <h3>Réveillon</h3>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="titulo-recomendacoes">Nossas recomendações</h2>
+
+            <div class="recomendacoes">
+                <div class="card-rec" style="top: 0; left: 0;">
+                    <img src="https://portalserradocipo.com.br/wp-content/uploads/2020/12/serra-do-cipo-cachoeira.jpg" class="img-card">
+                    <p class="dias">🌙 5 dias / 4 noites</p>
+                    <h3 class="titulo">Serra do Cipó Light</h3>
+                    <p class="preco-label">A partir de:</p>
+                    <p class="preco">R$ 3.235,00</p>
+                    <a href="/serra-do-cipo" class="botao" target="_blank">Ver mais detalhes</a>
+                </div>
+
+                <div class="card-rec" style="top: 0; left: 320px;">
+                    <img src="https://www.salardeuyuni.com/wp-content/uploads/2023/06/bolivia-salt-flat.jpg" class="img-card">
+                    <p class="dias">🌙 4 dias / 3 noites</p>
+                    <h3 class="titulo">Bolívia – Salar de Uyuni</h3>
+                    <p class="preco-label">A partir de:</p>
+                    <p class="preco">U$ 2.155,00</p>
+                    <a href="#" class="botao">Ver mais detalhes</a>
+                </div>
+
+                <div class="card-rec" style="top: 0; left: 640px;">
+                    <img src="https://ambiental.tur.br/wp-content/uploads/2023/02/2a4fddedc9fc1b64e01cfc5ae999cec9-768x576.jpg" class="img-card">
+                    <p class="dias">🌙 8 dias / 7 noites</p>
+                    <h3 class="titulo">Chapada Diamantina Sensação</h3>
+                    <p class="preco-label">A partir de:</p>
+                    <p class="preco">R$ 2.785,00</p>
+                    <a href="#" class="botao">Ver mais detalhes</a>
+                </div>
+
+                <div class="card-rec" style="top: 360px; left: 0;">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/39/63/48/excursion-en-bicicleta.jpg?w=500&h=500&s=1" class="img-card">
+                    <p class="dias">🌙 8 dias / 7 noites</p>
+                    <h3 class="titulo">Cuba Central</h3>
+                    <p class="preco-label">A partir de:</p>
+                    <p class="preco">U$ 2.110,00</p>
+                    <a href="#" class="botao">Ver mais detalhes</a>
+                </div>
+
+                <div class="card-rec" style="top: 360px; left: 320px;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY_G2PXIMOMgYrqPNm88xpLLXKeuU2yHcYiA&s" class="img-card">
+                    <p class="dias">🌙 7 dias / 6 noites</p>
+                    <h3 class="titulo">Belém e Ilha do Marajó</h3>
+                    <p class="preco-label">A partir de:</p>
+                    <p class="preco">R$ 5.985,00</p>
+                    <a href="#" class="botao">Ver mais detalhes</a>
+                </div>
+
+                <div class="card-rec" style="top: 360px; left: 640px;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgXnuoZaBvO3ruHNDRshOQvzsx2KBrT1UQRg&s" class="img-card">
+                    <p class="dias">🌙 9 dias / 8 noites</p>
+                    <h3 class="titulo">África do Sul – Johannesburg</h3>
+                    <p class="preco-label">A partir de:</p>
+                    <p class="preco">U$ 14.045,00</p>
+                    <a href="#" class="botao">Ver mais detalhes</a>
+                </div>
+            </div>
+
+            <div class="ver-todos">
+                <a href="roteiro.html" class="botao-ver-todos">Conhecer Todos os Roteiros</a>
+            </div>
+        </section>
+        <section class="depoimento">
+            <a href="/depoimentos">
+            <img src="{{ url_for('static', filename='imgs/depoimento.png') }}" alt="depoimentos">
+            </a>
+        </section>
+        <section class="blog-aventura-texto">
+            <div class="blog-box">
+                <h3>Blog de Aventura</h3>
+                <p>Explore dicas de viagem, histórias de aventura e lugares incríveis para conhecer.</p>
+                <a href="/blog" class="botao-blog">Acessar Blog</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="{{ url_for('static', filename='imgs/logo.png') }}" alt="Logo Ambiental">
+        </div>
+
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/depoimentos">Depoimentos</a>
+            <a href="/blog">Blog</a>
+            <a href="roteiro.html">Roteiros</a>
+            <a href="contato.html">Contato</a>
+        </div>
+
+        <div class="footer-social">
+            <p>Siga a gente:</p>
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">YouTube</a>
+        </div>
+
+        <div class="footer-copy">
+            <p>&copy; 2025 Brava Turismo. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
